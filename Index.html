@@ -1,73 +1,103 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f8f9fc;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.hero {
-  height: 90vh;
-  background: url('https://images.unsplash.com/photo-1521790797524-b2497295b8a0') center/cover;
-  position: relative;
-  text-align: center;
-  color: white;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Mubarak | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
 
-.overlay {
-  background: rgba(0,0,0,0.6);
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-}
+<body>
 
-.hero-content {
-  position: relative;
-  top: 35%;
-}
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h2 class="logo">Mubarak</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1 class="animate">KHURESHI MOHAMMED MUBARAK</h1>
+      <p id="typing"></p>
+      <div class="buttons">
+        <a href="mailto:mubarak.khureshi@gmail.com" class="btn">Hire Me</a>
+        <a href="resume.pdf" target="_blank" class="btn btn-light">Download Resume</a>
+      </div>
+    </div>
+  </header>
 
-.btn {
-  background-color: white;
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  margin: 10px;
-}
+  <!-- Summary -->
+  <section id="about" class="glass-section fade-in">
+    <h2>Professional Summary</h2>
+    <p>Business and technology-focused undergraduate with leadership experience in accounting, analytics, and operations across U.S. and Middle East markets. Skilled in financial analysis, data tools, and workflow optimization with proven ability to manage teams and improve processes.</p>
+  </section>
 
-section {
-  padding: 50px 10%;
-  text-align: center;
-}
+  <!-- Skills -->
+  <section class="skills fade-in">
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card glass"><h3>Technical</h3><p>Excel, SQL, Python, Tableau, Power BI, Google Analytics</p></div>
+      <div class="card glass"><h3>Business</h3><p>Financial Analysis, Operations Management, Reporting</p></div>
+      <div class="card glass"><h3>Soft Skills</h3><p>Leadership, Communication, Team Coordination</p></div>
+    </div>
+  </section>
 
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
+  <!-- Experience -->
+  <section id="experience" class="fade-in">
+    <h2>Work Experience</h2>
+    <div class="timeline">
+      <div class="job glass">
+        <h3>Arabic Tutor | Alma College</h3>
+        <span>Jan 2025 - Apr 2025</span>
+        <p>Delivered tutoring sessions, created learning materials, improved academic outcomes.</p>
+      </div>
+      <div class="job glass">
+        <h3>Accountant | Al Asifa Import/Export</h3>
+        <span>Jan 2021 - Apr 2023</span>
+        <p>Processed financial records, optimized inventory tracking, improved customer satisfaction.</p>
+      </div>
+      <div class="job glass">
+        <h3>General Manager | Kamhayath Bakery</h3>
+        <span>Apr 2020 - Jan 2021</span>
+        <p>Managed operations, procurement, logistics, and inventory reduction strategies.</p>
+      </div>
+    </div>
+  </section>
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+  <!-- Projects -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card glass hover-scale">
+        <h3>AI-Assisted Database Development</h3>
+        <p>Designed database using Kaggle datasets with SQL/Python and AI for insights.</p>
+        <a href="#" class="btn-small">View Project</a>
+      </div>
+    </div>
+  </section>
 
-.timeline .job {
-  margin-bottom: 25px;
-  border-left: 4px solid #007bff;
-  padding-left: 15px;
-}
+  <!-- Contact -->
+  <section id="contact" class="glass-section fade-in">
+    <h2>Contact</h2>
+    <p>📍 Toledo, Ohio | 📧 mubarak.khureshi@gmail.com | 📞 (989) 285-8332</p>
+    <a href="mailto:mubarak.khureshi@gmail.com" class="btn">Send a Message</a>
+  </section>
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: black;
-  color: white;
-}
+  <footer>
+    <p>© 2025 Mohammed Mubarak | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
